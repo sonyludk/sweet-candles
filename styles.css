@@ -179,3 +179,8 @@ legend {
   align-items: center;
   gap: 10px;             /* расстояние между фото, текстом и крестиком */
 }
+
+@media(max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .nav { flex-direction: column; gap: 4px; }
+}
