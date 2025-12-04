@@ -17,8 +17,8 @@
     <h1>Sweet Candles</h1>
     <nav class="nav">
       <a href="index.html">Главная</a>
-      <a href="about.html">О магазине</a>
       <a href="gallery.html">Товары</a>
+      <a href="about.html">О магазине</a>
       <a href="contacts.html">Контакты</a>
     </nav>
   </header>
@@ -34,11 +34,11 @@
       <div>
         <section id="popular" class="card">
           <h3>Популярные товары</h3>
-          <ol>
-            <li>Свеча Круассан</li>
-            <li>Свеча Малина</li>
-            <li>Свеча Клубничная матча</li>
-          </ol>
+            <ol>
+              <li>Свеча Круассан <button class="add-to-cart" data-name="Свеча Круассан" data-price="750">Добавить в корзину</button></li>
+              <li>Свеча Малина <button class="add-to-cart" data-name="Свеча Малина" data-price="550">Добавить в корзину</button></li>
+              <li>Свеча Клубничная матча <button class="add-to-cart" data-name="Свеча Клубничная матча" data-price="650">Добавить в корзину</button></li>
+            </ol>
         </section>
 
         <section id="delivery" class="card" style="margin-top:12px">
@@ -69,14 +69,9 @@
         </section>
       </div>
 
-      <aside class="card">
+      <aside class="card" id="cart">
         <h4>Корзина</h4>
-        <p>Ваша корзина пуста</p>
-        <p><a href="gallery.html">Перейти в каталог</a>
-        <p><small>Кокосовые свечки</small></p>
-        <a href="#" data-large="images/IMA 1.png" class="img-link"><img src="images/IMA 1.png" alt="thumb" class="small"></a>
-        <a href="#" data-large="images/IMA 2.png" class="img-link"><img src="images/IMA 2.png" alt="thumb" class="small"></a>
-        <a href="#" data-large="images/IMA 3.png" class="img-link"><img src="images/IMA 3.png" alt="thumb" class="small"></a>
+        <!-- JS автоматически заполнит товары с фото, ценой и кнопкой удаления -->
       </aside>
     </div>
   </main>
@@ -84,5 +79,4 @@
   <footer class="footer">Sweet Candles</footer>
   <script src="script.js"></script>
 </body>
-
 </html>

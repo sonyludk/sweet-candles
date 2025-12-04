@@ -9,7 +9,7 @@ body{font-family:Inter, Arial, sans-serif;margin:0;background:#fff;color:#222}
 .nav a.active{background:var(--accent);color:#fff}
 .container{max-width:980px;margin:20px auto;padding:0 16px}
 .hero{padding:18px;background:#fafcff;border-radius:8px;margin-bottom:18px}
-.grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:16px}
 .card{background:#fff;border:1px solid #f2f2f6;padding:12px;border-radius:8px}
 .table{width:100%;border-collapse:collapse}
 .table td,.table th{border:1px solid #efefef;padding:8px}
@@ -40,49 +40,142 @@ a.img-link{display:inline-block}
   text-decoration: underline; /* подчеркнуть при наведении */
 }
 
-  .btn {
-    background-color: #ff6f61; /* яркий цвет, сразу заметный */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 24px;
-    font-size: 16px;
-    cursor: pointer; /* курсор-указатель делает очевидным, что можно нажать */
-    transition: background-color 0.3s, transform 0.1s;
-  }
+.btn {
+  background-color: #ff6f61; /* яркий цвет, сразу заметный */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer; /* курсор-указатель делает очевидным, что можно нажать */
+  transition: background-color 0.3s, transform 0.1s;
+}
 
-  .btn:hover {
-    background-color: #ff8a75; /* светлее при наведении */
-    transform: translateY(-2px); /* лёгкий “всплывающий” эффект */
-  }
+.btn:hover {
+  background-color: #ff8a75; /* светлее при наведении */
+  transform: translateY(-2px); /* лёгкий “всплывающий” эффект */
+}
 
-  .btn:active {
-    transform: translateY(0);
-    background-color: #e65a50; /* чуть темнее при клике */
-  }
+.btn:active {
+  transform: translateY(0);
+  background-color: #e65a50; /* чуть темнее при клике */
+}
 
-  .btn:focus {
-    outline: 2px solid #ffb3a7;
-    outline-offset: 2px;
-  }
+.btn:focus {
+  outline: 2px solid #ffb3a7;
+  outline-offset: 2px;
+}
 
-  input, textarea, select {
-    display: block;
-    width: 100%;
-    margin-top: 5px;
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-  }
+input, textarea, select {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
 
-  fieldset {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
 
-  legend {
-    font-weight: bold;
-    padding: 0 10px;
-  }
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.add-to-cart {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  margin-top: 5px;
+}
+
+.add-to-cart:hover {
+  background-color: #ff8a75;
+  transform: translateY(-2px);
+}
+
+.add-to-cart:active {
+  transform: translateY(0);
+  background-color: #e65a50;
+}
+
+.add-to-cart:focus {
+  outline: 2px solid #ffb3a7;
+  outline-offset: 2px;
+}
+
+.remove-btn {
+  position: relative;
+  background: transparent;
+  border: none;
+  color: #d9534f;
+  font-size: 16px;
+  padding: 2px 6px;
+  margin-left: 8px;
+  cursor: pointer;
+  line-height: 1;
+  border-radius: 4px;
+}
+
+/* само всплывающее окно */
+.remove-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+/* маленькая стрелка */
+.remove-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #333;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* появление при наведении */
+.remove-btn:hover::after,
+.remove-btn:hover::before {
+  opacity: 1;
+}
+
+.remove-btn:hover {
+  background-color: #f8d7da;
+}
+
+.remove-btn:active {
+  transform: scale(0.95);
+}
+
+#order_list li {
+  margin-bottom: 12px;   /* зазор между позициями */
+  display: flex;
+  align-items: center;
+  gap: 10px;             /* расстояние между фото, текстом и крестиком */
+}
