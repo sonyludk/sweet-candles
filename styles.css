@@ -184,3 +184,17 @@ legend {
   .grid { grid-template-columns: 1fr; }
   .nav { flex-direction: column; gap: 4px; }
 }
+
+.logo-link, .title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title-link h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-link img {
+  cursor: pointer;
+}
