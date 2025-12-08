@@ -100,3 +100,17 @@ color: inherit;
 .logo-link img {
   cursor: pointer;
 }
+
+.btn-view {
+  background-color: #F4B9C4;
+  color: #fff !important; 
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-view:hover {
+  background-color: #F29AB0; /* чуть темнее при наведении */
+  color: #fff !important;
+}

@@ -47,7 +47,7 @@ products.forEach(product => {
       <div class="card-body">
         <h5 class="card-title">${product.name}</h5>
         <p class="card-text">${product.price} руб.</p>
-        <a href="#" data-large="${product.img}" class="btn btn-primary">Смотреть</a>
+        <a href="#" data-large="${product.img}" class="btn btn-view">Смотреть</a>
       </div>
     </div>
   `;
