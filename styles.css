@@ -40,49 +40,63 @@ a.img-link{display:inline-block}
   text-decoration: underline; /* подчеркнуть при наведении */
 }
 
-  .btn {
-    background-color: #ff6f61; /* яркий цвет, сразу заметный */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 24px;
-    font-size: 16px;
-    cursor: pointer; /* курсор-указатель делает очевидным, что можно нажать */
-    transition: background-color 0.3s, transform 0.1s;
-  }
+.btn {
+  background-color: #ff6f61; /* яркий цвет, сразу заметный */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer; /* курсор-указатель делает очевидным, что можно нажать */
+  transition: background-color 0.3s, transform 0.1s;
+}
 
-  .btn:hover {
-    background-color: #ff8a75; /* светлее при наведении */
-    transform: translateY(-2px); /* лёгкий “всплывающий” эффект */
-  }
+.btn:hover {
+  background-color: #ff8a75; /* светлее при наведении */
+  transform: translateY(-2px); /* лёгкий “всплывающий” эффект */
+}
 
-  .btn:active {
-    transform: translateY(0);
-    background-color: #e65a50; /* чуть темнее при клике */
-  }
+.btn:active {
+  transform: translateY(0);
+  background-color: #e65a50; /* чуть темнее при клике */
+}
 
-  .btn:focus {
-    outline: 2px solid #ffb3a7;
-    outline-offset: 2px;
-  }
+.btn:focus {
+  outline: 2px solid #ffb3a7;
+  outline-offset: 2px;
+}
 
-  input, textarea, select {
-    display: block;
-    width: 100%;
-    margin-top: 5px;
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-  }
+input, textarea, select {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
 
-  fieldset {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
 
-  legend {
-    font-weight: bold;
-    padding: 0 10px;
-  }
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.logo-link, .title-link {
+text-decoration: none;
+color: inherit;
+}
+
+.title-link h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-link img {
+  cursor: pointer;
+}

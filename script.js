@@ -1,16 +1,24 @@
-// site2_thematic/script.js
-document.addEventListener('DOMContentLoaded', ()=>{
-  const p = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav a').forEach(a=>{
-    if(a.getAttribute('href') === p) a.classList.add('active');
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  const page = window.location.pathname.split('/').pop() || 'index.html';
 
-  // миниатюра -> открытие большого изображения в новой вкладке
-  document.querySelectorAll('[data-large]').forEach(el=>{
-    el.addEventListener('click', (e)=>{
+  // Загружаем header
+  fetch('includes/header.html')
+    .then(response => response.text())
+    .then(html => {
+      document.querySelector('#header-placeholder').innerHTML = html;
+
+      // Подсветка активной страницы
+      document.querySelectorAll('.nav a').forEach(a => {
+        if (a.getAttribute('href') === page) a.classList.add('active');
+      });
+    })
+    .catch(err => console.error('Ошибка загрузки header:', err));
+
+  // Открытие большого изображения по клику на миниатюру
+  document.querySelectorAll('[data-large]').forEach(el => {
+    el.addEventListener('click', e => {
       e.preventDefault();
-      window.open(el.getAttribute('data-large'),'_blank','noopener');
+      window.open(el.getAttribute('data-large'), '_blank', 'noopener');
     });
   });
 });
-
