@@ -24,15 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const products = [
-  { name: "Свеча Кокос", price: 550, img: "images/catalog/candle_1.jpeg" },
-  { name: "Свеча Сливочное масло", price: 450, img: "images/catalog/candle_2.jpeg" },
-  { name: "Свеча Круассан", price: 750, img: "images/catalog/candle_3.jpeg" },
-  { name: "Свеча Мандарин", price: 550, img: "images/catalog/candle_9.jpeg" },
-  { name: "Свеча Малина", price: 550, img: "images/catalog/candle_6.jpeg" },
-  { name: "Свеча Лимон", price: 550, img: "images/catalog/candle_7.jpeg" },
-  { name: "Свеча Клубничная матча", price: 650, img: "images/catalog/candle_5.jpeg" },
-  { name: "Свеча Кофе", price: 650, img: "images/catalog/candle_8.jpeg" },
-  { name: "Свеча Лавандовый латте", price: 650, img: "images/catalog/candle_4.jpeg" }
+  { name: "Свеча Кокос", price: 550, img: "images/catalog/candle 1.png" },
+  { name: "Свеча Сливочное масло", price: 450, img: "images/catalog/candle 2.png" },
+  { name: "Свеча Круассан", price: 750, img: "images/catalog/candle 3.png" },
+  { name: "Свеча Мандарин", price: 550, img: "images/catalog/candle 4.png" },
+  { name: "Свеча Малина", price: 550, img: "images/catalog/candle 5.png" },
+  { name: "Свеча Лимон", price: 550, img: "images/catalog/candle 6.png" },
+  { name: "Свеча Клубничная матча", price: 650, img: "images/catalog/candle 7.png" },
+  { name: "Свеча Кофе", price: 650, img: "images/catalog/candle 8.png" },
+  { name: "Свеча Лавандовый латте", price: 650, img: "images/catalog/candle 9.png" }
 ];
 
 const container = document.getElementById('catalog-container');
@@ -61,4 +61,5 @@ container.querySelectorAll('[data-large]').forEach(el => {
     e.preventDefault();
     window.open(el.getAttribute('data-large'), '_blank', 'noopener');
   });
+
 });
