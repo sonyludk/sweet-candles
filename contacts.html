@@ -60,8 +60,17 @@
       <fieldset>
         <legend>Информация о заказе</legend>
 
+      <label for="exampleInputPassword1" class="form-label">Категория заказа</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Свеча</option>
+          <option value="1">Набор свечей</option>
+          <option value="2">Декор</option>
+        </select>
+
+
+        
         <div class="form-row">
-          <label>Категория заказа:
+          <label>Категория заказа
             <select name="category">
               <option value="candle">Свеча</option>
               <option value="set">Набор свечей</option>
@@ -71,11 +80,11 @@
         </div>
 
         <div class="form-row">
-          <label>Количество <input type="number" name="quantity" min="1" value="1"></label>
+          <label>Количество свечей <input type="number" name="quantity" min="1" value="1"></label>
         </div>
 
         <div class="form-row">
-          <span>Тип доставки:</span><br>
+          <span>Тип доставки</span><br>
 
         <div class="form-check">
             <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
@@ -99,7 +108,7 @@
         </div>
 
         <div class="form-row">
-          <span>Дополнительно:</span><br>
+          <span>Дополнительно</span><br>
 
         <div class="form-check">
            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
@@ -121,14 +130,10 @@
               Подписаться на новости
            </label>
         </div>
-          
-        <div class="form-row">
-          <label><input type="checkbox" name="gift_wrap" value="yes" checked> Упаковать как подарок</label><br>
-          <label><input type="checkbox" name="subscribe" value="yes"> Подписаться на новости</label>
-        </div>
+       
 
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Комментарий к заказу:</label>
+          <label for="exampleInputPassword1" class="form-label">Комментарий к заказу</label>
           <textarea name="message" rows="4" placeholder="Ваши пожелания..." class="form-control" id="exampleInputPassword1"></textarea>
         </div>
       </fieldset>
@@ -149,6 +154,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
