@@ -26,33 +26,29 @@
       <fieldset>
         <legend>Личные данные</legend>
 
-        <div class="form-row">
-          <label>Фамилия <input type="text" name="lastname" required></label>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Фамилия</label>
+          <input type="text" class="form-control" id="exampleInputPassword1">
         </div>
 
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Фамилия</label>
-          <input type="lastname" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPassword1" class="form-label">Имя</label>
+          <input type="text" class="form-control" id="exampleInputPassword1">
         </div>
         
-        <div class="form-row">
-          <label>Имя <input type="text" name="firstname" required></label>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Группа</label>
+          <input type="text" class="form-control" id="exampleInputPassword1">
         </div>
 
-        <div class="form-row">
-          <label>Группа <input type="text" name="group" required></label>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Мобильный телефон</label>
+          <input type="text" placeholder="+7 900 000 00 00" class="form-control" id="exampleInputPassword1">
         </div>
 
-        <div class="form-row">
-          <label>Мобильный телефон <input type="text" name="phone" placeholder="+7 900 000 00 00" required></label>
-        </div>
-
-        <div class="form-row">
-          <label>Email <input type="email" name="email" required></label>
-        </div>
-
-        <div class="form-row">
-          <label>Пароль для личного кабинета <input type="password" name="password" required></label>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Email</label>
+          <input type="text" class="form-control" id="exampleInputPassword1">
         </div>
 
         <div class="form-row">
@@ -90,11 +86,16 @@
           <label><input type="checkbox" name="subscribe" value="yes"> Подписаться на новости</label>
         </div>
 
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Комментарий к заказу:</label>
+          <textarea name="message" rows="4" placeholder="Ваши пожелания..." class="form-control" id="exampleInputPassword1"></textarea>
+        </div>
+        
         <div class="form-row">
           <label>Комментарий к заказу:
             <textarea name="message" rows="4" placeholder="Ваши пожелания..."></textarea>
           </label>
-        </div>
+        </div> 
       </fieldset>
 
       <!-- скрытые данные -->
@@ -113,6 +114,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
