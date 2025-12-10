@@ -113,4 +113,5 @@ color: inherit;
 .btn-view:hover {
   background-color: #F29AB0; /* чуть темнее при наведении */
   color: #fff !important;
+
 }
